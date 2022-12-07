@@ -1,0 +1,17 @@
+<html>
+    <p><img src="https://a-z-animals.com/media/2021/05/Largest-Dinosaurs-Ever-header.jpg" height="auto" width="400"></p>
+    <h1>The dinosaur asks you a second question </h1>
+    <p>Dinosaur are big or not?</p>
+    <p><input type="text" id="answer" value="type answer here"></p>
+    <p><button onclick="checkAnswer()">check Answer</button></p>
+
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById("answer").value
+            if (answer==="big") {
+                alert("correct answer!")
+                window.location.href="/dinosaur2.html"
+            }
+        }
+    </script>
+</html>
