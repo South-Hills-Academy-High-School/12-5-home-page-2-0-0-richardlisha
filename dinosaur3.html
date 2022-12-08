@@ -1,3 +1,18 @@
 <html>
-    <h1>The dinosaur asks you a third question </h1>
+    <h1>look that picture</h1>
+    <p><img src="https://scitechdaily.com/images/White-Rock-Spinosaurid-scaled.jpg" height="auto" width="800"></p>
+    <h2>The dinosaur asks you a third question </h2>
+    <p>Do you think the sky is blue today?</p>
+    <p><input type="text" id="answer" value="type answer here"></p>
+    <p><button onclick="checkAnswer()">check Answer</button></p>
+
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById("answer").value
+            if (answer==="no") {
+                alert("correct answer!")
+                window.location.href="/dinosaur4.html"
+            }
+        }
+    </script>
 </html>

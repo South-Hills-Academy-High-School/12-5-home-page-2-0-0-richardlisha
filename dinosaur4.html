@@ -1,3 +1,18 @@
 <html>
-    <h1>The dinosaur asks you a forth question </h1>
+    <h1>look that picture</h1>
+    <p><img src="https://content.presspage.com/uploads/2170/1920_dinodnamain.jpg?10000" height="auto" width="800"></p>
+    <h2>The dinosaur asks you a fourth question </h2>
+    <p>Do you think the sun very bright today?</p>
+    <p><input type="text" id="answer" value="type answer here"></p>
+    <p><button onclick="checkAnswer()">check Answer</button></p>
+
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById("answer").value
+            if (answer==="yes") {
+                alert("correct answer!")
+                window.location.href="/dinosaur5.html"
+            }
+        }
+    </script>
 </html>

@@ -1,3 +1,18 @@
 <html>
-    <h1>The dinosaur asks you a fifth question </h1>
+    <h1>look that picture</h1>
+    <p><img src="https://static.scientificamerican.com/sciam/cache/file/B4520B4E-BCC1-411C-BEC6541928BDB992.jpg" height="auto" width="800"></p>
+    <h2>The dinosaur asks you a fifth question </h2>
+    <p>Do you think I'm handsome?</p>
+    <p><input type="text" id="answer" value="type answer here"></p>
+    <p><button onclick="checkAnswer()">check Answer</button></p>
+
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById("answer").value
+            if (answer==="yes") {
+                alert("correct answer!")
+                window.location.href="/ending.html"
+            }
+        }
+    </script>
 </html>
